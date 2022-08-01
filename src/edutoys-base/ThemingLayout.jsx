@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Container, Divider, Grid, Header, Image, Menu, Segment } from 'semantic-ui-react'
 import DataTable from '../react-table-editable/DataTable'
 import EdutoysCircularIcon from './CircularIcon'
+import MarkdownEditor from '../markdown-editor/MarkdownEditor'
 
 const ThemingLayout = () => (
     <Container style={{ marginTop: '3em' }}>
@@ -12,7 +13,12 @@ const ThemingLayout = () => (
           Experience the various React components like a baby!
         </Header.Subheader>
       </Header>
-  
+
+      <Header as='h2' dividing>
+        Markdowns with images that can be copied & pasted
+      </Header>
+      <MarkdownEditor />  
+
       <Header as='h2' dividing>
         React-Table with editable cell
       </Header>
