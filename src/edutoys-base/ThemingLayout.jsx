@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Container, Divider, Grid, Header, Image, Menu, Segment } from 'semantic-ui-react'
 import DataTable from '../react-table-editable/DataTable'
 import EdutoysCircularIcon from './CircularIcon'
+import ExampleSVG from '../molelcule-view/examples/ExampleSvg'
 import MarkdownEditor from '../markdown-editor/MarkdownEditor'
 
 const ThemingLayout = () => (
@@ -14,6 +15,20 @@ const ThemingLayout = () => (
         </Header.Subheader>
       </Header>
 
+      <Header as='h2' dividing>
+        2D Chemical structure by RDKit.js
+      </Header>
+      <Grid columns={3} stackable>
+        <Grid.Column>
+          <ExampleSVG />
+        </Grid.Column>
+        <Grid.Column>
+          <ExampleSVG />
+        </Grid.Column>
+        <Grid.Column>
+          <ExampleSVG />
+        </Grid.Column>
+      </Grid>
       <Header as='h2' dividing>
         Markdowns with images that can be copied & pasted
       </Header>
