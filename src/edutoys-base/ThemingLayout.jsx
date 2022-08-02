@@ -3,6 +3,7 @@ import { Button, Container, Divider, Grid, Header, Image, Menu, Segment } from '
 import DataTable from '../react-table-editable/DataTable'
 import EdutoysCircularIcon from './CircularIcon'
 import ExampleSVG from '../molelcule-view/examples/ExampleSvg'
+import MarkdownEditor from '../markdown-editor/MarkdownEditor'
 
 const ThemingLayout = () => (
     <Container style={{ marginTop: '3em' }}>
@@ -28,6 +29,10 @@ const ThemingLayout = () => (
           <ExampleSVG />
         </Grid.Column>
       </Grid>
+      <Header as='h2' dividing>
+        Markdowns with images that can be copied & pasted
+      </Header>
+      <MarkdownEditor />  
 
       <Header as='h2' dividing>
         React-Table with editable cell
