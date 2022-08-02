@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Container, Divider, Grid, Header, Image, Menu, Segment } from 'semantic-ui-react'
 import DataTable from '../react-table-editable/DataTable'
 import EdutoysCircularIcon from './CircularIcon'
+import ExampleSVG from '../molelcule-view/examples/ExampleSvg'
 
 const ThemingLayout = () => (
     <Container style={{ marginTop: '3em' }}>
@@ -12,7 +13,22 @@ const ThemingLayout = () => (
           Experience the various React components like a baby!
         </Header.Subheader>
       </Header>
-  
+
+      <Header as='h2' dividing>
+        2D Chemical structure by RDKit.js
+      </Header>
+      <Grid columns={3} stackable>
+        <Grid.Column>
+          <ExampleSVG />
+        </Grid.Column>
+        <Grid.Column>
+          <ExampleSVG />
+        </Grid.Column>
+        <Grid.Column>
+          <ExampleSVG />
+        </Grid.Column>
+      </Grid>
+
       <Header as='h2' dividing>
         React-Table with editable cell
       </Header>
